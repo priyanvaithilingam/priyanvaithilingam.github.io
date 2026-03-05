@@ -217,6 +217,14 @@ ul li::marker {
   content: "";
 }
 
+.nerd-line {
+  margin: 0.9rem 0 0;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--line);
+  color: var(--text-muted);
+  font-size: 0.84rem;
+}
+
 a {
   color: var(--link);
 }
@@ -225,20 +233,6 @@ a:hover,
 a:focus-visible {
   background: var(--link-hover);
   outline: none;
-}
-
-.last-updated {
-  margin-top: 1rem;
-  border-top: 1px solid var(--line);
-  padding-top: 0.55rem;
-  color: var(--muted);
-  font-size: 0.78rem;
-  text-align: center;
-}
-
-.last-updated::before {
-  content: "└─ ";
-  color: var(--accent-tree);
 }
 
 @media (max-width: 680px) {
