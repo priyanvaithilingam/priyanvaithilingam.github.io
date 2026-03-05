@@ -9,23 +9,29 @@
   <meta name="author" content="Priyan Vaithilingam">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#f3ecd3">
-  <link rel="canonical" href="https://priyanvaithilingam.github.io/">
+  <link rel="canonical" href="https://priyan.info/">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Priyan Vaithilingam | Academic Homepage">
   <meta property="og:description" content="Research profile, publications, work experience, and contact information.">
-  <meta property="og:url" content="https://priyanvaithilingam.github.io/">
+  <meta property="og:url" content="https://priyan.info/">
   <meta property="og:site_name" content="Priyan Vaithilingam Academic Site">
+  <meta property="og:image" content="https://priyan.info/favicon-256x256.png">
+  <meta property="og:image:width" content="256">
+  <meta property="og:image:height" content="256">
+  <meta property="og:image:alt" content="Priyan Vaithilingam logo">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Priyan Vaithilingam | Academic Homepage">
   <meta name="twitter:description" content="Research profile, publications, work experience, and contact information.">
+  <meta name="twitter:image" content="https://priyan.info/favicon-256x256.png">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-QloaFhh4Xx0f2Yad3f305HU5xnFaFJBAouDJB42yV7I='; style-src 'self'; img-src 'self' https: data:; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Priyan Vaithilingam",
-    "url": "https://priyanvaithilingam.github.io/",
+    "url": "https://priyan.info/",
     "jobTitle": "Researcher",
     "knowsAbout": [
       "Human-Computer Interaction",
@@ -41,7 +47,6 @@
   <div class="page terminal-container">
     <header>
       <div class="header-bar">
-        <p class="stamp">Academic Homepage</p>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark Mode</button>
       </div>
       <h1>Priyan Vaithilingam</h1>
@@ -150,7 +155,7 @@
           <strong>Assuage: Assembly Synthesis Using A Guided Exploration</strong><br>
           <em>UIST 2021</em><br>
           <em>Jingmei Hu, <strong>Priyan Vaithilingam</strong>, Stephen Chong, Margo Seltzer, Elena L Glassman</em><br>
-          <a href="https://dl.acm.org/doi/10.1145/3411764.3445646" rel="noopener noreferrer">[acm]</a> |
+          <a href="https://dl.acm.org/doi/10.1145/3472749.3474740" rel="noopener noreferrer">[acm]</a> |
           <a href="https://priyan.info/files/assuage_uist2021.pdf" rel="noopener noreferrer">[pdf]</a>
         </div>
         <div class="publication">
@@ -227,28 +232,6 @@
     <p class="nerd-line">user@homepage:~$ git commit -m "checking in version_final_final_2" && exit 0</p>
 
   </div>
-  <script>
-    (function () {
-      var root = document.documentElement;
-      var toggle = document.getElementById("theme-toggle");
-      var storedTheme = localStorage.getItem("theme");
-      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-      var initialTheme = storedTheme || (prefersDark ? "dark" : "light");
-
-      function setTheme(theme) {
-        var isDark = theme === "dark";
-        root.setAttribute("data-theme", theme);
-        toggle.textContent = isDark ? "Light Mode" : "Dark Mode";
-        toggle.setAttribute("aria-pressed", String(isDark));
-        localStorage.setItem("theme", theme);
-      }
-
-      setTheme(initialTheme);
-      toggle.addEventListener("click", function () {
-        var nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-        setTheme(nextTheme);
-      });
-    })();
-  </script>
+  <script src="theme.js" defer></script>
 </body>
 </html>

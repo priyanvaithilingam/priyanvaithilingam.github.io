@@ -10,7 +10,6 @@
   --line: #cccccc;
   --link: var(--text-accent);
   --link-hover: #e6f3ff;
-  --stamp-bg: #fff2c1;
   --shadow: rgba(0, 0, 0, 0.12);
   --toggle-bg: #f2f2f2;
   --toggle-text: var(--text-primary);
@@ -35,7 +34,6 @@
   --line: #565656;
   --link: var(--text-accent);
   --link-hover: #2c4258;
-  --stamp-bg: #4a432f;
   --shadow: rgba(0, 0, 0, 0.55);
   --toggle-bg: #2a2a2a;
   --toggle-text: var(--text-primary);
@@ -87,7 +85,7 @@ body {
 .header-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 0.5rem;
   margin-bottom: 0.2rem;
 }
@@ -123,16 +121,6 @@ header h1::before {
 header h1::after {
   content: " ─┐";
   color: var(--accent-tree);
-}
-
-.stamp {
-  display: inline-block;
-  margin: 0;
-  padding: 0.1rem 0.45rem;
-  border: 1px solid var(--line);
-  background: var(--stamp-bg);
-  font-size: 0.8rem;
-  text-transform: uppercase;
 }
 
 .subtitle {
